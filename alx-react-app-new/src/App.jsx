@@ -10,17 +10,20 @@ import UserProfile from './components/UserProfile'
 
 import WelcomeMessage from './components/WelcomeMessage.jsx'
 
+import Counter from './components/counter.jsx';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-  
-
-      <WelcomeMessage />
+        <WelcomeMessage />
 
       <Header />
       <MainContent />
+
+      <Counter />
+
       <Footer />
 
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
