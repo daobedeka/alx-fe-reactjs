@@ -10,6 +10,7 @@ import UserProfile from './components/UserProfile'
 
 import WelcomeMessage from './components/WelcomeMessage.jsx'
 
+import Counter from './components/counter.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <MainContent />
 
+      <Counter />
   
 
       <Footer />
