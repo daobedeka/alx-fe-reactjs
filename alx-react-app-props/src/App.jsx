@@ -12,6 +12,8 @@ import WelcomeMessage from './components/WelcomeMessage.jsx'
 
 import ProfilePage from './components/ProfilePage.jsx';
 
+import UserContext from './components/UserContext.js';
+
 function App() {
   const [count, setCount] = useState(0)
   const userData={ name: "Jane Doe", email: "jane.doe@example.com" };
@@ -45,7 +47,10 @@ function App() {
 
       <Header />
       <MainContent />
-      <ProfilePage userData={userData} />
+      <UserContext.Provider value={userData}>
+      <ProfilePage  />
+      </UserContext.Provider>
+      
       <Footer />
 
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
