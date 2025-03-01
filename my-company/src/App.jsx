@@ -6,18 +6,19 @@ import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
-
+import Navbar from './components/Navbar'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
     <BrowserRouter>
+    <Navbar />
 
     <Routes>
-      <Route path='' element={<Home />}>
+      <Route exact path='/' element={<Home />}>
       </Route>
-      <Route path='Home' element={<Home />}>
+      <Route path='/Home' element={<Home />}>
       </Route>
 
       <Route path='About' element={<About />}></Route>
