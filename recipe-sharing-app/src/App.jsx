@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <h1>The Header</h1>
 
      <AddRecipeForm />
      <RecipeList />
